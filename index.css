@@ -25,9 +25,18 @@ a:hover {
 #main-content {
   background-color: var(--bgColor);
   box-sizing: border-box;
-  height: 100vh;
   width: 100vw;
   padding: 10px;
+}
+
+#main-content.inline {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+#main-content.stacked {
+  align-items: center;
 }
 
 #about {

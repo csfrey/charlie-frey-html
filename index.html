@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Charlie Frey</title>
+  </head>
+  <body>
+    <main id="main-content">
+      <fieldset id="about" class="green-box">
+        <legend>About</legend>
+        <div>
+          <div id="title">Charlie Frey</div>
+          <div id="subtitle">Software Engineer</div>
+        </div>
+        <div id="tagline">
+          Charlie is building the next generation of software solutions.
+        </div>
+        <div id="links">
+          <a href="https://www.linkedin.com/in/csfrey95">--> LinkedIn <--</a>
+          <a href="https://github.com/csfrey">--> GitHub <--</a>
+          <a href="https://www.linkedin.com/in/csfrey95">--> CodeWars <--</a>
+        </div>
+      </fieldset>
+      <fieldset id="resume" class="green-box">
+        <legend>Resume</legend>
+        <div id="resume-text"></div>
+      </fieldset>
+    </main>
+
+    <script>
+      fetchResumeBlob();
+    </script>
+  </body>
+</html>
